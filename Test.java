@@ -9,13 +9,13 @@ public class Test {
         /*for(int i =0; i<5; i++){
            myList.addLast(i);
         }*/
-        myList.addFirst(2);
-        myList.addFirst(2);
+        myList.addFirst(8);
+        myList.addFirst(9);
         myList.addFirst(2);
         myList.addFirst(2);
         myList.addFirst(3);
         myList.addFirst(4);
-        myList.addFirst(2);
+        myList.addFirst(5);
         myList.addFirst(0);
         myList.printAll();
         //System.out.println("************");
@@ -27,7 +27,8 @@ public class Test {
        // myList.printAll();
         System.out.println("************");
         //myList.deleteSpecificElement(2);
-        myList.removeDuplicates();
+        //myList.removeDuplicates();
+        myList.nth2LastElementRemove(1);
         myList.printAll();
 
     }

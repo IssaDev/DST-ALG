@@ -117,4 +117,18 @@ public class SinglyLinkedList <T extends Comparable<T>> implements Cloneable {
             }
         }
     }
+    public void nth2LastElementRemove(int nth){
+        int numOfTravesals = size - nth - 1;
+        int count = 0;
+        Node<T> currHead = head;
+        if (head == null || nth > size) System.out.println("Invalid selection");
+        else if (nth == size) deleteHead();
+        else{
+            while (count < numOfTravesals){
+                currHead = currHead.getNext();
+                count++;
+            }
+            currHead.setNext(currHead.getNext().getNext());
+        }
+    }
 }
